@@ -37,14 +37,16 @@ let username = JSON.parse(localStorage.getItem('dataUser')).username;
 
 let level = JSON.parse(localStorage.getItem('dataUser')).level;
 
+let defaultTimer = 30
+
 if (level == 'easy'){
-  let defaultTimer = 30
+  defaultTimer = 30
 }
 else if (level == 'medium'){
-  let defaultTimer = 20
+ defaultTimer = 20
 }
 else if (level == 'hard') {
-  let defaultTimer = 15
+ defaultTimer = 15
 }
 
 timerDisplay.textContent = defaultTimer;
